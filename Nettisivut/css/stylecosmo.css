@@ -1,0 +1,239 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    padding: 0 0;
+    background-image: url(../kuvat/cosmo/cosmobg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2, h3 {
+    font-family: 'Lora', sans-serif;
+}
+
+h1, h2, h3, p {
+    color:#fefffe;
+}
+
+p {
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #f29b05;
+}
+
+.logo {
+    font-family: 'Lobster', sans-serif;
+    font-size: 50px;
+    color: #fefffe;
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 15px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 40px;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f29b05;
+    text-transform: uppercase;
+}
+
+nav ul li::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #fefffe;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+.content h1 {
+    color:#f29b05;
+    margin: 20px 0px 20px;
+    font-size: 95px;
+    transition: transform .4s;
+}
+
+.content h1:hover {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #f29b05;
+    transform:translateY(5%);
+}
+
+h2 {
+    color:#fefffe;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.content h3 {
+    color: #fefffe;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+h2::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #f29b05;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+h2:hover::after {
+    width: 100%;
+}
+
+.content h2:hover span {
+    color:#f29b05;
+}
+
+.info {
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    background-color: #191919;
+}
+
+.laatikko {
+    width: 30vw;
+    background-color: #101010;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    transition: .4s;
+}
+
+.laatikko:hover {
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+.laatikko h3 {
+    font-size: 25px;
+    margin: 15px;
+    transition: .5s;
+}
+
+.laatikko:hover h3 {
+    text-decoration: underline;
+    color: #f29b05;
+    transform:scaleY(1.1);
+}
+
+.info ul li {
+    margin: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    color:#fefffe;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+ul li span {
+    font-weight: bold;
+}
+
+.laatikko p {
+    margin: 15px;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.laatikko:hover ul li span {
+    color: #f29b05;
+}
+
+.galleria {
+    background-color: #101010;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+img {
+    width: 30vw;
+    height: 300px;
+    filter: grayscale(100%);
+    transition: transform .5s ease;
+    border-radius: 20px;
+}
+
+img:hover {
+    filter: grayscale(0%);
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.9);
+    transform: translateY(-5px);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* white: #f29b05 black: #34373a red: #e63420 yellow: #f29b05*/

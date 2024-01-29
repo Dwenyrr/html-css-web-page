@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quiz</title>
+    <meta charset="utf-8">
+    <link href="../css/stylequiz.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Calligraffitti&family=Hind+Madurai:wght@300&family=Italianno&family=Lobster&family=Lora:ital@1&family=Monoton&family=Nanum+Brush+Script&family=Poppins:wght@600&family=Splash&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <h1 class="logo">CCZ</h1>
+            <ul>
+                <li><a href="../html/etusivu.html">Etusivu</a></li>
+                <li><a href="../html/capo.html">Capo</a></li>
+                <li><a href="../html/cosmo.html">Cosmo</a></li>
+                <li><a href="../html/zero.html">Zero</a></li>
+                <li><a href="../html/quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+                <h1>Quiz</h1>
+                <h2 class ="efekti"><span>Testaa</span> tietosi CCZ-porukasta</h2>
+            </div>
+    </div>
+    
+    <main>
+        <div class="quiz">
+            <form action="#">
+                <h2>Quiz</h2>
+                <fieldset>
+                    <div class="nimi">
+                        <label for="name">Nimi:</label>
+                        <input id="name" name="name" type="text">
+                    </div>
+
+                    <p>Kuka koirista on/oli vanhin?</p>
+                    <label for="capo1"><input type="radio" id="capo1" name="vanhin" value="capo"
+                            class="check-space">Capo</label>
+                    <label for="cosmo1"><input type="radio" id="cosmo1" name="vanhin" value="cosmo"
+                            class="check-space">Cosmo</label>
+                    <label for="zero1"><input type="radio" id="zero1" name="vanhin" value="zero"
+                            class="check-space">Zero</label>
+
+                    <p>Ketkä koirista ovat/olivat herkkujen perään?</p>
+                    <label for="capo2"><input type="checkbox" id="capo2" name="herkut" value="capo"
+                            class="check-space">Capo</label>
+                    <label for="cosmo2"><input type="checkbox" id="cosmo2" name="herkut" value="cosmo"
+                            class="check-space">Cosmo</label>
+                    <label for="zero2"><input type="checkbox" id="zero2" name="herkut" value="zero"
+                            class="check-space">Zero</label>
+
+                    <p>Kuka koirista harrastaa/harrasti lintubongausta?</p>
+                    <label for="capo3"><input type="radio" id="capo3" name="lintubongaus" value="capo"
+                            class="check-space">Capo</label>
+                    <label for="cosmo3"><input type="radio" id="cosmo3" name="lintubongaus" value="cosmo"
+                            class="check-space">Cosmo</label>
+                    <label for="zero3"><input type="radio" id="zero3" name="lintubongaus" value="zero"
+                            class="check-space">Zero</label>
+
+                    <p>Kuka koirista harrastaa/harrasti kukkien haistelua?</p>
+                    <label for="capo4"><input type="radio" id="capo4" name="kukkienhaistelu" value="capo"
+                            class="check-space">Capo</label>
+                    <label for="cosmo4"><input type="radio" id="cosmo4" name="kukkienhaistelu" value="cosmo"
+                            class="check-space">Cosmo</label>
+                    <label for="zero4"><input type="radio" id="zero4" name="kukkienhaistelu" value="zero"
+                            class="check-space">Zero</label>
+
+                    <p>Kuka koirista on/oli kotoisin Tsekeistä?</p>
+                    <label for="capo5"><input type="radio" id="capo5" name="tsekki" value="capo"
+                            class="check-space">Capo</label>
+                    <label for="cosmo5"><input type="radio" id="cosmo5" name="tsekki" value="cosmo"
+                            class="check-space">Cosmo</label>
+                    <label for="zero5"><input type="radio" id="zero5" name="tsekki" value="zero"
+                            class="check-space">Zero</label>
+                </fieldset>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Jenny Hoikka</p>
+        <p>TKMI22SV</p>
+        <p>Merkintäkielten kurssi, OT5</p>
+    </footer>
+</body>
+
+</html>
